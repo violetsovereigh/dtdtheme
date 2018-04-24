@@ -1,0 +1,130 @@
+/*
+    Theme Name:testTheme
+    Author:liichin
+    Version:1.0
+Theme URI: http://teamtreehouse.com/wordpress-bootstrap-theme-tutorial
+Description: A demo theme built to accompany the Treehouse blog post <a href="http://teamtreehouse.com/wordpress-bootstrap-theme-tutorial">How to Build a WordPress Theme with Bootstrap</a>.
+Tags: responsive, white, bootstrap
+
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+License URI: http://creativecommons.org/licenses/by-sa/3.0/
+
+This simple theme was built using the example Bootstrap theme "Basic marketing site" found on the Bootstrap web site http://twitter.github.com/bootstrap/examples/hero.html
+*/
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url('bootstrap/dist/css/bootstrap.css');
+@import url('bootstrap/dist/css/bootstrap-grid.css');
+@import url('bootstrap/dist/css/bootstrap-reboot.css');
+
+body{
+    background-color: #F7F7F7;
+    font-family: 'Noto Sans TC', sans-serif;
+    padding: 0px;
+    margin:0;
+}
+
+#mycarousel{
+    margin-top: 80px;
+    padding-bottom: 20px;  
+    width: 900px;
+    height: 502px; 
+    float: left;
+   
+}
+#carousel-item-img{
+    width: 900px;
+    height: 502px;
+    object-fit:cover; 
+}
+
+#indicators-set{
+    position: absolute;
+    right: 0;
+    top: 22px;
+    left: 87%;
+    z-index: 15;
+  
+    display: inline-block;
+    padding-left: 0;
+  
+ 
+    list-style: none;
+}
+.carousel-indicators div{
+    position: relative;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 15px;
+  height: 15px;
+  margin-right: 3px;
+  margin-left: 3px;
+  margin-bottom: 26px;
+  text-indent: -999px;
+  background-color:transparent;
+  border: solid 3px #34cabd;
+  border-radius: 50%;
+}
+.carousel-indicators div::before {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    content: "";
+  }
+  
+  .carousel-indicators div::after {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    content: "";
+  }
+.carousel-indicators  .active{
+    border: solid 7.8px #34cabd;
+}
+#club-title{
+    position: relative;
+    margin-top: 44px;
+    font-size: 50px;
+    color:#34cabd;
+}
+
+#club-content{
+    position: relative;
+    width: 511px;
+  height: 228px;
+  opacity: 0.8;
+  mix-blend-mode: undefined;
+  background-color: #000000;
+  margin-top: -40px;
+  margin-left:-90px;
+  margin-bottom: 112px;
+  color:#ffff;
+  
+}
+#club-content-ul{
+   
+    margin-top: 31px;
+}
+#club-content-li{
+    color:#ffff;
+    margin-bottom: 36px;
+    
+}
+.card-text{
+    
+    margin-top:-24px;
+}
+.card{
+    border-color:transparent;
+}
+.card-title{
+    font-size: 20px;
+    font-weight:bolder;
+  letter-spacing: 1.9px;
+}
